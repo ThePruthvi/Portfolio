@@ -33,12 +33,32 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img.profile-photo {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.header .logo img.profile-photo {
+    transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+.header .logo img.profile-photo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 6%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
